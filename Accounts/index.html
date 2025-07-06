@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Account Selling & Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>🧾 MushRon and Elle's Age up</h2>
+        <p style="text-align: center; font-weight: bold;">All accounts are add email no bona</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Account #</th>
+                    <th>Bucks (₱1 per 1000)</th>
+                    <th>Age Ups (₱1 each)</th>
+                    <th>Total (₱)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="account-table-body">
+                <!-- Dynamic rows will be added here -->
+            </tbody>
+        </table>
+        <div class="status-counts">
+            <span id="available-count">✅ Available: 0</span> |
+            <span id="farming-count">⏳ Farming: 0</span> |
+            <span id="sold-count">❌ Sold: 0</span>
+        </div>
+        <div class="earnings">
+            <p>🧾 Total: ₱<span id="total-income">0</span></p>
+            <p>✅ Remaining: ₱<span id="available-income">0</span></p>
+            <p>⏳ On Hold: ₱<span id="farming-income">0</span></p>
+            <p>❌ Earned: ₱<span id="sold-income">0</span></p>
+        </div>
+
+        <button onclick="addRow()">➕ Add Account</button>
+    </div>
+
+    <button onclick="clearAll()" class="clear">🗑️ Clear All</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
