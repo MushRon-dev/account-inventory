@@ -1,4 +1,4 @@
-`let accountCount = 1;
+let accountCount = 1;
 
 // Load saved data from localStorage
 window.onload = () => {
@@ -158,4 +158,3 @@ function clearAll() {
 
   addRow();
 }
-`
